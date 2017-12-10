@@ -5,3 +5,33 @@
   margin: 0;
   padding: 0;
 }
+/* Estilos reutilizxables*/
+.image {
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: cover;
+  width: 100%;
+}
+/* Estilos para vista móvil*/
+
+.view-movil {
+  background-image: url("../assets/imgs/dawn.png");
+  height: 700px;
+}
+
+@media screen and (min-width: 768px) {/* vista de tablet*/
+   .view-tablet {
+      background-image: url("../assets/imgs/night.jpg");
+      height: 700px;
+    }
+  }
+@media screen and (min-width: 992px) { /* vista de laptop*/
+  .view-desktop {
+      background-image: url("../assets/imgs/sunny-day.jpg");
+      height: 700px;
+
+  }
+  .display-none-night, .display-none-dawn {
+    display: none;
+  }
+}
