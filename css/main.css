@@ -1,7 +1,7 @@
 /*SETEAR NUESTROS ARCHIVOS: SEA IGUAL PARA TODOS LOS NAVEGADORES*/
 * {
   box-sizing: border-box;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Bungee', cursive;
   margin: 0;
   padding: 0;
 }
@@ -12,26 +12,52 @@
   background-size: cover;
   width: 100%;
 }
+
 /* Estilos para vista móvil*/
-
-.view-movil {
+ .view-movil {
   background-image: url("../assets/imgs/dawn.png");
-  height: 700px;
+  height: 600px;
+  }
+ .display-none-night, .display-none-sunny {
+   display:none;
 }
-
+.row {
+  background-color: black;
+}
+.kitten-text {
+  font-size: 1,2rem;
+  text-align: center;
+  line-height:;
+  color: #fff;
+  margin-top: 10px;
+}
 @media screen and (min-width: 768px) {/* vista de tablet*/
    .view-tablet {
       background-image: url("../assets/imgs/night.jpg");
       height: 700px;
     }
+   .display-none-night {
+     display: block;
+   }
+   .display-none-dawn, .display-none-sunny {
+     display:none;
+    }
+    .kitten-text {
+      font-size: 1.4rem;
+    }
   }
 @media screen and (min-width: 992px) { /* vista de laptop*/
   .view-desktop {
       background-image: url("../assets/imgs/sunny-day.jpg");
-      height: 700px;
-
+      height: 725px;
   }
-  .display-none-night, .display-none-dawn {
-    display: none;
+  .display-none-sunny {
+    display: block;
   }
+  .display-none-dawn, .display-none-night {
+    display:none;
+}
+.kitten-text {
+  font-size: 2rem;
+}
 }
