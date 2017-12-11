@@ -21,7 +21,7 @@
   border: 2px solid rgb(160, 160, 160);
 }
 /* Estilos para vista móvil*/
-.view-movil {
+.view-mobile {
   background-image: url("../assets/imgs/dawn.png");
   height: 450px;
 }
