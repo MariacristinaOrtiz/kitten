@@ -16,13 +16,13 @@ Se muestra la website **kitten**. Para resolver dicho ejercicio se hizo lo sigui
 
 * Se creó un documento **HTML** donde se observa la aplicación de **grid system** para tener un sistema organizado y una experiencia uniforme al momento de la que la ventana del navegador se haga mas pequeña, la division es como sigue:
 
-  - _div.container_: Contiene todas las filas con sus columnas, en las cuales encontramos los contenidos.
+  - **div.container**: Contiene todas las filas con sus columnas, en las cuales encontramos los contenidos.
 
-  - _div.row_: Existen 2 filas principales:
+  - **div.row**: Existen 2 filas principales:
 
-    - **Primera**: Contiene al _**section**_, contiene las columnas(2) donde se hallan las imagenes de los gatitos. En la etiqueta _**section**_ se agregaron las imagenes de fondo por medio del archivo **main.css** (background-image).
+    - _**Primera**_: Contiene al _**section**_, contiene las columnas(2) donde se hallan las imagenes de los gatitos. En la etiqueta _**section**_ se agregaron las imagenes de fondo por medio del archivo **main.css** (background-image).
 
-    - **Segunda**: Contiene a la columna donde se encuentran tres parrafos  con contenido para cada fondo de imagen con su respectivo gatito a presentar.
+    - _**Segunda**_: Contiene a la columna donde se encuentran tres parrafos  con contenido para cada fondo de imagen con su respectivo gatito a presentar.
 
 * Se creó un archivo **main.css** y se adaptó el archivo **grid.css** facilitado por la junior teacher donde se encuentran todos los estilos aplicados a todas la partes del body del documento HTML. Se utilizó la técnica de css3 **media query** (condicional) para experiencia uniforme al momento de la que la ventana del navegador se haga mas pequeña.
 

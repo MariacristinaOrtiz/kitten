@@ -5,7 +5,12 @@
   margin: 0;
   padding: 0;
 }
-/* Estilos reutilizxables*/
+/* ESTILOS PARA VISTA MOBILE*/
+/* Estilos reutilizables*/
+.row {
+  background-color: black;
+  border: 2px solid rgb(160, 160, 160);
+}
 .background-image{
   background-repeat: no-repeat;
   background-position:center;
@@ -16,18 +21,7 @@
   max-width: 100%;
   transform: translateY(130%);
 }
-.row {
-  background-color: black;
-  border: 2px solid rgb(160, 160, 160);
-}
-/* Estilos para vista móvil*/
-.view-mobile {
-  background-image: url("../assets/imgs/dawn.png");
-  height: 450px;
-}
-.display-none-night, .display-none-sunny {
-   display:none;
-}
+/* Estilos a los textos contenidos en la SEGUNDA FILA PRINCIPAL*/
 .kitten-text {
   font-size: 1,2rem;
   text-align: center;
@@ -37,35 +31,47 @@
   line-height: 1.5;
   padding: 0.7rem;
 }
-/* Estilos para vista de tablet*/
+/* Aseguramos que para la vista mobile las imagenes de fondo, imagen y textonight y sunny no aparezcan*/
+.display-none-night, .display-none-sunny {
+  display:none;
+}
+/* ...Fin de estilos reutilizables...*/
+.view-mobile {
+  background-image: url("../assets/imgs/dawn.png");
+  height: 450px;
+}
+
+/* ESTILOS PARA VISTA TABLET*/
 @media screen and (min-width: 768px) {
   .view-tablet {
-     background-image: url("../assets/imgs/night.jpg");
+    background-image: url("../assets/imgs/night.jpg");
     height: 700px;
   }
   .display-none-night {
-     display: block;
+    display: block;
   }
+  /* Aseguramos que para la vista tablet las imagenes de fondo, imagen y texto dawn y sunny no aparezcan*/
   .display-none-dawn, .display-none-sunny {
      display:none;
   }
   .kitten-text {
-      font-size: 1.4rem;
+    font-size: 1.4rem;
   }
 }
-/* Estilos para vista de laptop */
+/* ESTILOS PARA VISTA DESKTOP*/
 @media screen and (min-width: 992px) {
   .view-desktop {
-      background-image: url("../assets/imgs/sunny-day.jpg");
-      height: 723px;
+    background-image: url("../assets/imgs/sunny-day.jpg");
+    height: 723px;
   }
   .display-none-sunny {
     display: block;
   }
+  /* Aseguramos que para la vista desktop las imagenes de fondo, imagen y texto dawn y sunny no aparezcan*/
   .display-none-dawn, .display-none-night {
     display:none;
   }
   .kitten-text {
-  font-size: 2rem;
+    font-size: 2rem;
   }
 }
